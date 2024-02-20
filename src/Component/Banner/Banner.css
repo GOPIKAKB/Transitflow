@@ -1,0 +1,94 @@
+.banner-container {
+    background: url("../../../public/Assets/Photo.png") no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 0px 220px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* width: 100%; */
+}
+
+.text-container {
+    width: fit-content;
+    max-width: 488px;
+}
+
+.primary-text {
+    background: #041C3780;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: fit-content;
+}
+
+.pattern {
+    width: 4px;
+    height: 23px;
+    background-color: #FFB629;
+    margin-right: 10px;
+}
+
+.banner-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.banner-content {
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.explore-button {
+    background: url("../../../public/Assets/Background.png") no-repeat;
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #23212A;
+    width: 194px;
+    height: 60px;
+    top: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .banner-container {
+        height: auto;
+        padding: 20px 20px;  
+        justify-content: center;
+    }
+
+    .text-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .banner-title {
+        font-size: 40px;  
+        line-height: 48px;
+    }
+
+    .banner-content,
+    .explore-button {
+        font-size: 14px; 
+    }
+}

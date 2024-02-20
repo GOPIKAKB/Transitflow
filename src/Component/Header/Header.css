@@ -1,0 +1,91 @@
+.header-container {
+    background-color: #091242;
+    height: 160px;
+    gap: 200px;
+    justify-content: center;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-right-conatiner {
+    gap: 39px;
+    height: 68px;
+    color: white;
+}
+
+.adress img {
+    margin-right: 10px;
+}
+
+.time {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.img-container svg {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .header-right-conatiner {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100px;
+        color: white;
+    }
+
+    .img-container {
+        font-size: 30px;
+    }
+
+    .img-container svg {
+        display: inline;
+        margin-bottom: 2px;
+        margin-right: 30px;
+    }
+
+    .drawer {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        text-align: center;
+        color: black;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .drawer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .drawer li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 30px;
+        border-bottom: 2px black solid;
+        font-family: 'Krub',sans-serif;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+    }
+}
